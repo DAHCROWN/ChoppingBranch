@@ -329,6 +329,7 @@ label>input[type="checkbox"]:checked+*::before {
 }
 .otpField{
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .otpInput{
     width: 40px;

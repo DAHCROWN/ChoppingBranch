@@ -9,6 +9,7 @@ import OurServices from './pages/OurServices';
 import Home from './pages/Home';
 import SignUp from './pages/SignUp';
 import Verification from './pages/Verification'
+import VerificationPrompt from './pages/VerificationPrompt';
 import Donation from './pages/Donations'
 import DonateCrypto from './pages/DonateCrypto';
 import DonateCash from './pages/DonateCash';
@@ -27,6 +28,8 @@ const App = () => {
         <Route element={<SignUp />} path='/signup'>
         </Route>
         <Route element={<Verification />} path='/auth'>
+        </Route>
+        <Route element={<VerificationPrompt />} path='/redirecting'>
         </Route>
         <Route element={<Donation />} path='/donations'>
         </Route>

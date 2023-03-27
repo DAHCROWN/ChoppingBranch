@@ -5,9 +5,14 @@ import insta from '../images/insta.png';
 import f from '../images/f.png';
 import twiter from '../images/twiter.png';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 
 const SignUpPage = () => {
+    const navigate = useNavigate();
+    function navAuth(){
+        navigate('/auth')
+    }
     return (
         <div className='landing-page'>
             <Header />
@@ -33,7 +38,8 @@ const SignUpPage = () => {
                     <br />
                     <Form.Control className='input' type="password" placeholder="Password" />
                     <br />
-                    <Link className='loginBtn' style={{ width: '90%', textAlign: 'center', }} to='#'>Sign Up</Link>
+                    <button className='loginBtn' onClick={navAuth} >Sign Up</button>
+                    {/* <Link className='loginBtn' style={{ width: '90%', textAlign: 'center', }} to='#'>Sign Up</Link> */}
                     <Link className='loginBtn' style={{ width: '90%', textAlign: 'center', marginBottom: 30, marginTop: 10 }} to='#'>Sign up as a partner</Link>
 
 
