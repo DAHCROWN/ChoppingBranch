@@ -285,13 +285,13 @@ label>input[type="checkbox"]:checked+*::before {
 
 
 .me-auto{
-    display: 'flex' ;
-    color: 'white';
-    justifyContent: 'space-evenly';
-    background: '#F31D1D'; 
-    marginTop: 20 ;
-    height: 150px;
-    color: 'white';
+    display: flex ;
+    color: white;
+    justify-content: space-evenly;
+    background: #F31D1D !important; 
+    marginTop: 20px ;
+    /* height: 80px; */
+    color: white;
 }
 
 
